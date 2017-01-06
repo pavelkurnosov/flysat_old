@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Flysat', [
+angular.module('BlurAdmin', [
   'ngAnimate',
   'ui.bootstrap',
   'ui.sortable',

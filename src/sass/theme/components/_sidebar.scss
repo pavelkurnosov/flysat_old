@@ -79,7 +79,7 @@ a.al-sidebar-list-link {
     }
   }
   i {
-    margin-right: 18px;
+    //margin-right: 18px;
     width: 16px;
     display: inline-block;
   }
@@ -143,6 +143,7 @@ a.al-sidebar-list-link {
       &:hover {
         color: $primary;
       }
+      cursor: pointer;
     }
     &.selected:not(.with-sub-menu) > a {
       border: none;
