@@ -16,13 +16,14 @@
                         <th></th>
                     </thead>-->
                     <tbody>
-                    <tr  ng-repeat="item in update.items">
+                    <tr ng-repeat="item in update.items" class="editable-row">
                         <!--<td><i ng-class="{'icon-up': item.isVisitsUp, 'icon-down': !item.isVisitsUp }"></i></td>-->
                         <td class="hide"></td>
-                        <td class="col-md-2 align-center">{{item.name}}</td>
+                        <td class="col-md-2 align-center"><img class="sign-img" ng-src="assets/img/flags/{{item.country}}.png"> {{item.country}}</td>
+                        <td class="col-md-2 align-center">{{ item.name }}</td>
                         <td class="col-md-1 align-center">{{item.frequency}}</td>
-                        <td class="col-md-1 align-center"><a href="#"><img class="sign-img" src="assets/img/{{item.state}}.png"></a> {{item.state}}</td>
-                        <td class="col-md-2 align-center">{{item.satellite}} </td>
+                        <td class="col-md-1 align-center"><a href="#"><img class="sign-img" ng-src="assets/img/{{item.state}}.png"></a> {{item.state}}</td>
+                        <td class="col-md-2 align-center">{{item.satellite}}</td>
                         <td class="col-md-7 align-center">{{item.package}} {{item.note}}</td>
                     </tr>
                     </tbody>
