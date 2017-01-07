@@ -109,7 +109,7 @@ a.al-sidebar-list-link {
 
 @mixin layout-collapsed() {
   .al-main {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .al-footer {
@@ -131,6 +131,7 @@ a.al-sidebar-list-link {
     padding: 0;
     border-bottom: none;
     position: relative;
+    margin-left: -10px;
     a {
       display: block;
       text-shadow: none;
@@ -160,7 +161,7 @@ a.al-sidebar-list-link {
   @include default-sublist();
 }
 
-.sidebar-hover-elem{
+.sidebar-hover-elem {
   width: 4px;
   background: $primary;
   position: absolute;
@@ -255,6 +256,10 @@ a.al-sidebar-list-link {
   }
 }
 
+.menu-collapsed .al-sidebar-list-item span {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .menu-collapsed {
     @include layout-collapsed();
@@ -280,7 +285,7 @@ a.al-sidebar-list-link {
     @include sidebar-hidden();
   }
   .al-main {
-    margin-left: 0;
+    margin-left: -15px;
   }
   .al-footer {
     padding-left: 0;

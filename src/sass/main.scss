@@ -3,28 +3,6 @@
 // injector
 // endinjector
 
-.menubar-wrapper {
-  float: right;
-}
-.menubar {
-  list-style-type: none;
-
-  li {
-    float: left;
-    cursor: pointer;
-    padding: 25px 7px 25px 7px;
-
-    &.active, &:hover {
-      color: #3ca4ff;
-      //font-weight: bold;
-      border-bottom: 4px solid $primary;
-      background: #1c2933;
-    }
-    a{
-      color: white;
-    }
-  }
-}
 
 .sign-img {
   width: 15px;
