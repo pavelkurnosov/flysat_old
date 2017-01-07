@@ -6,12 +6,20 @@
     'use strict';
 
     angular.module('BlurAdmin.pages.hotbird')
-        .controller('HomeCtrl', HotbirdCtrl);
+        .controller('HotbirdCtrl', HotbirdCtrl);
 
     /** @ngInject */
     function HotbirdCtrl($scope) {
         $scope.data = {
+            rows : [{
 
+            },{
+
+            },{
+
+            },{
+
+            },]
         }
     }
 })();

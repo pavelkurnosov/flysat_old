@@ -1,32 +1,36 @@
-<div class="row">
-    <div class="col-md-12">
-        <div ng-repeat="update in data.updates" ba-panel ba-panel-title="{{update.title}}" ba-panel-class="with-scroll">
-            <div class="horizontal-scroll">
-                <table class="table table-hover table-condensed">
-                    <thead>
-                        <th class="hide"></th>
-                        <th>Txp No Source Date</th>
-                        <th>Freq Pol Mode</th>
-                        <th>SR-FEC</th>
-                        <th>Channel Name</th>
-                        <th>Web</th>
-                        <th>V.PID</th>
-                        <th>A.PID Language</th>
-                        <th>SID Code</th>
-                        <th>Foot Prints</th>
-                        <th>Comments</th>
-                    </thead>
-                    <tbody>
-                    <tr ng-repeat="item in data.birddata">
-                        <td class="hide"></td>
-                        <td class="col-md-3 align-center">{{item.name}}</td>
-                        <td class="col-md-2 align-center">{{item.frequency}}</td>
-                        <td class="col-md-2 align-center"><a href="#"><img class="sign-img" src="assets/img/{{item.state}}.png"></a> {{item.state}}</td>
-                        <td class="col-md-3 align-center">{{item.satellite}} </td>
-                        <td class="col-md-2 align-center">{{item.package}} {{item.note}}</td>
-                    </tr>
-                    </tbody>
-                </table>
+<div class="sub-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div ng-repeat="update in data.updates" ba-panel ba-panel-title="{{update.title}}" ba-panel-class="with-scroll">
+                <div class="horizontal-scroll">
+                    <table class="table table-hover table-condensed">
+                        <thead>
+                        <tr>
+                            <th class="hide"></th>
+                            <th>Txp No Source Date</th>
+                            <th>Freq Pol Mode</th>
+                            <th>SR-FEC</th>
+                            <th>Channel Name</th>
+                            <th>Web</th>
+                            <th>V.PID</th>
+                            <th>A.PID Language</th>
+                            <th>SID Code</th>
+                            <th>Foot Prints</th>
+                            <th>Comments</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in data.birddata">
+                            <td class="hide"></td>
+                            <td class="col-md-3 align-center">{{item.name}}</td>
+                            <td class="col-md-2 align-center">{{item.frequency}}</td>
+                            <td class="col-md-2 align-center"><a href="#"><img class="sign-img" src="assets/img/{{item.state}}.png"></a> {{item.state}}</td>
+                            <td class="col-md-3 align-center">{{item.satellite}}</td>
+                            <td class="col-md-2 align-center">{{item.package}} {{item.note}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

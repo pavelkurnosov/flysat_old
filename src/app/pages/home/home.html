@@ -1,4 +1,6 @@
-<div class="row">
+<ba-sidebar></ba-sidebar>
+
+<div class="row al-main">
     <div class="col-md-12">
         <div ng-repeat="update in data.updates" ba-panel ba-panel-title="{{update.title}}" ba-panel-class="with-scroll">
             <div class="horizontal-scroll">
@@ -17,11 +19,11 @@
                     <tr  ng-repeat="item in update.items">
                         <!--<td><i ng-class="{'icon-up': item.isVisitsUp, 'icon-down': !item.isVisitsUp }"></i></td>-->
                         <td class="hide"></td>
-                        <td class="col-md-3 align-center">{{item.name}}</td>
-                        <td class="col-md-2 align-center">{{item.frequency}}</td>
-                        <td class="col-md-2 align-center"><a href="#"><img class="sign-img" src="assets/img/{{item.state}}.png"></a> {{item.state}}</td>
-                        <td class="col-md-3 align-center">{{item.satellite}} </td>
-                        <td class="col-md-2 align-center">{{item.package}} {{item.note}}</td>
+                        <td class="col-md-2 align-center">{{item.name}}</td>
+                        <td class="col-md-1 align-center">{{item.frequency}}</td>
+                        <td class="col-md-1 align-center"><a href="#"><img class="sign-img" src="assets/img/{{item.state}}.png"></a> {{item.state}}</td>
+                        <td class="col-md-2 align-center">{{item.satellite}} </td>
+                        <td class="col-md-7 align-center">{{item.package}} {{item.note}}</td>
                     </tr>
                     </tbody>
                 </table>
