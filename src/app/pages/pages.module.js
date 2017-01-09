@@ -16,7 +16,7 @@
 
     /** @ngInject */
     function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-        $urlRouterProvider.otherwise('/hotbird');
+        $urlRouterProvider.otherwise('/home');
     }
 
 })();
